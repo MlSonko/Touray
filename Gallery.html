@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+    <!-- Bootstrap 5 css -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <style>
+        /* Small tweaks Bootstrap doesn't cover. Kept in one place per page. */
+        img { max-width: 100%; }
+        .hero {
+            min-height: 380px;
+            background-image: linear-gradient(rgba(0,90,150,0.25), rgba(0,90,150,0.25)), url(img/Bansang.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .hero .welcome { font-family: cursive; font-style: italic; font-size: clamp(1.6rem, 6vw, 2.7rem); margin: 0; }
+        .hero h1 { font-family: cursive; font-weight: bold; font-size: clamp(2rem, 9vw, 3.3rem); }
+        .btn-green { background: #12a66a; color: #fff; border-radius: 30px; font-weight: bold; padding: .7rem 1.8rem; }
+        .btn-green:hover { background: #0e8a58; color: #fff; }
+        .tour-img { width: 100%; height: 100%; min-height: 200px; max-height: 320px; object-fit: cover; }
+        .card-img-top { height: 180px; object-fit: cover; }
+        .gallery-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: .5rem; }
+        .carousel-item img { height: clamp(220px, 50vw, 480px); object-fit: cover; }
+        @media (max-width: 575.98px) {
+            .carousel-caption h3 { font-size: 1rem; }
+            .carousel-caption p { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar (full width bar, content inside a container) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color:seagreen">MEDTOURSGAMBIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="About us.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="Guided Tours.html">Guided Tours</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold active" href="Gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="Contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div class="container my-3">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="img/Oysterfam.jpg" class="d-block w-100" alt="Oyster family">
+                    <div class="carousel-caption">
+                        <h3>Welcome to The Gambia</h3>
+                        <p>Experience The Gambia like a local</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Bansang.jpg" class="d-block w-100" alt="Bansang town">
+                    <div class="carousel-caption">
+                        <h3>Early morning view of Bansang, town of hills</h3>
+                        <p>Join us on our next adventure</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/woodenhouse.jpg" class="d-block w-100" alt="Lamin Lodge">
+                    <div class="carousel-caption">
+                        <h3>Lamin Lodge</h3>
+                        <p>One of the greatest structures we have, with a perfect view over the creeks and green mangroves.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- GALLERY GRID: 2 columns on phones, 3 on tablets, 4 on desktop -->
+    <section class="container my-4">
+        <h1 class="h2 text-center mb-4">Explore our beautiful tours through our gallery</h1>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2 g-md-3">
+            <div class="col"><img src="img/IMG-20250304-WA0022.jpg" alt="Tour moment" class="gallery-img" loading="lazy"></div>
+            <div class="col"><img src="img/bakau mesuem.jpg" alt="Bakau museum" class="gallery-img" loading="lazy"></div>
+            <div class="col"><img src="img/Bansang.jpg" alt="Bansang" class="gallery-img" loading="lazy"></div>
+            <div class="col"><img src="img/Gm home cooking.jpg" alt="Gambian home cooking" class="gallery-img" loading="lazy"></div>
+            <div class="col"><img src="img/HIPPO.jpg" alt="Hippos" class="gallery-img" loading="lazy"></div>
+            <div class="col"><img src="img/Barra banjul.jpg" alt="Barra to Banjul ferry" class="gallery-img" loading="lazy"></div>
+            <div class="col"><img src="img/Oysterfam.jpg" alt="Oyster family" class="gallery-img" loading="lazy"></div>
+            <div class="col"><img src="img/med at roots.jpg" alt="Muhammed at Roots" class="gallery-img" loading="lazy"></div>
+            <div class="col"><img src="img/myself at laminlodge.jpg" alt="Muhammed at Lamin Lodge" class="gallery-img" loading="lazy"></div>
+            <div class="col"><img src="img/group pic at tanji.jpg" alt="Group at Tanji" class="gallery-img" loading="lazy"></div>
+            <div class="col"><img src="img/muhammed with oyesters.jpg" alt="Muhammed with oysters" class="gallery-img" loading="lazy"></div>
+            <div class="col"><img src="img/woodenhouse.jpg" alt="Wooden house" class="gallery-img" loading="lazy"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER (full width background, content inside a container) -->
+    <footer class="text-white mt-5 py-4" style="background:#034b3d;">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-12 col-md-4">
+                    <h2 class="h4 mb-1">MedtoursGambia</h2>
+                    <p class="mb-0">Explore . Discover . Experience</p>
+                </div>
+                <div class="col-12 col-md-5">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><b>Contacts:</b> +220 877090791 / +220 835279722</li>
+                        <li class="mb-2"><b>Location:</b> Senegambia, Kololi Strip</li>
+                        <li class="mb-2"><b>Email:</b> <a class="text-white" href="mailto:jobartehmuhammed39@gmail.com" style="word-break:break-all;">jobartehmuhammed39@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h2 class="h4">Follow Us</h2>
+                    <!-- Replace these dots with your social media links later -->
+                    <p class="fs-4 mb-0">. &nbsp; . &nbsp; . </p>
+                </div>
+            </div>
+            <hr style="border:0; border-top:1px solid #6b9087; margin:25px 0 15px 0;">
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

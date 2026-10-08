@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us - Medtoursgambia</title>
+    <!-- Bootstrap 5 css -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <style>
+        /* Small tweaks Bootstrap doesn't cover. Kept in one place per page. */
+        img { max-width: 100%; }
+        .hero {
+            min-height: 380px;
+            background-image: linear-gradient(rgba(0,90,150,0.25), rgba(0,90,150,0.25)), url(img/Bansang.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .hero .welcome { font-family: cursive; font-style: italic; font-size: clamp(1.6rem, 6vw, 2.7rem); margin: 0; }
+        .hero h1 { font-family: cursive; font-weight: bold; font-size: clamp(2rem, 9vw, 3.3rem); }
+        .btn-green { background: #12a66a; color: #fff; border-radius: 30px; font-weight: bold; padding: .7rem 1.8rem; }
+        .btn-green:hover { background: #0e8a58; color: #fff; }
+        .tour-img { width: 100%; height: 100%; min-height: 200px; max-height: 320px; object-fit: cover; }
+        .card-img-top { height: 180px; object-fit: cover; }
+        .gallery-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: .5rem; }
+        .carousel-item img { height: clamp(220px, 50vw, 480px); object-fit: cover; }
+        @media (max-width: 575.98px) {
+            .carousel-caption h3 { font-size: 1rem; }
+            .carousel-caption p { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar (full width bar, content inside a container) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color:seagreen">MEDTOURSGAMBIA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link fw-bold" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold active" href="About us.html">About us</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="Guided Tours.html">Guided Tours</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="Gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" href="Contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ABOUT US -->
+    <section id="about" class="container my-4 my-md-5">
+        <div class="text-center">
+            <h1>About us</h1>
+            <h2 class="h3">Welcome to Medtoursgambia</h2>
+            <p class="fw-bold">Discover The Gambia . Explore Nature . Experience Culture</p>
+            <hr>
+            <img src="img/abcas.jpg" alt="Medtoursgambia" class="img-fluid rounded" style="max-width:300px; width:100%;">
+            <h2 class="h3 mt-4">Discover The Gambia With Us</h2>
+        </div>
+
+        <div class="mx-auto mt-3" style="max-width:800px;">
+            <p>Welcome to <b>Medtoursgambia</b>, your friendly gateway to discovering the beauty, culture, nature and unforgettable experiences of The Gambia.</p>
+            <p>
+                We are passionate about creating memorable experiences for visitors who want to explore The
+                Gambia beyond the ordinary tourist attractions. Our tours allow you to discover local communities,
+                beautiful beaches, wildlife, nature reserves and the rich traditions of our country.
+            </p>
+            <p>
+                Whether you are looking for a relaxing sightseeing tour, an exciting nature adventure or an
+                authentic cultural experience, we are here to help you make the most of your time in The Gambia.
+            </p>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- MISSION / VISION / WHAT WE OFFER -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold">OUR MISSION</h3>
+                        <p class="mb-0">Our mission is to provide friendly, safe and memorable tours while giving our guests the opportunity to discover the true beauty and culture of The Gambia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold">OUR VISION</h3>
+                        <p class="mb-0">Our vision is to become a trusted local tour company known for authentic experiences, excellent hospitality and unforgettable adventures in The Gambia.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h3 class="h5 fw-bold text-center">WHAT WE OFFER</h3>
+                        <p class="text-center">Explore some of the experiences you can enjoy with us:</p>
+                        <ul class="mb-0">
+                            <li>North Senegal Tour (Fathala)</li>
+                            <li>Abuko Nature Reserve Tour</li>
+                            <li>Experience The Gambia Tour</li>
+                            <li>South Gambia Tour</li>
+                            <li>Georgetown Overnight Tours</li>
+                            <li>Beautiful Sunset Experiences</li>
+                            <li>Community Excursions</li>
+                            <li>River Gambia Cruise (Lazy Day Fishing)</li>
+                            <li>Gambian Home Cooking</li>
+                            <li>Roots Tour (Kunta Kinteh Island)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- WHY CHOOSE US -->
+        <div class="mx-auto" style="max-width:800px;">
+            <h2 class="text-center">Why Choose Us</h2>
+            <ul>
+                <li><b>Friendly Service:</b> We welcome our guests like family.</li>
+                <li><b>Local Knowledge:</b> Discover The Gambia through a local perspective.</li>
+                <li><b>Authentic Experience:</b> Experience local culture, traditions and communities.</li>
+                <li><b>Memorable Adventures:</b> We create experiences you will remember long after your holiday.</li>
+                <li><b>Personal Attention:</b> We listen to our guests and help create experiences that suit their interests.</li>
+            </ul>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- OUR VALUES -->
+        <div class="text-center mx-auto" style="max-width:800px;">
+            <h2>Our Values</h2>
+            <p class="fw-bold">Respect . Hospitality . Safety . Authenticity . Adventure</p>
+            <p>We believe tourism should create meaningful connections between visitors and local communities while celebrating the natural and cultural beauty of The Gambia.</p>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- CALL TO ACTION -->
+        <div class="text-center">
+            <h2>Ready To Explore The Gambia?</h2>
+            <p>Come with us and experience the beauty, culture and adventure of The Gambia.</p>
+            <p class="fw-bold">Your Gambia adventure starts here!</p>
+            <a href="Contacts.html" class="btn btn-green">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- FOOTER (full width background, content inside a container) -->
+    <footer class="text-white mt-5 py-4" style="background:#034b3d;">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-12 col-md-4">
+                    <h2 class="h4 mb-1">MedtoursGambia</h2>
+                    <p class="mb-0">Explore . Discover . Experience</p>
+                </div>
+                <div class="col-12 col-md-5">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><b>Contacts:</b> +220 877090791 / +220 835279722</li>
+                        <li class="mb-2"><b>Location:</b> Senegambia, Kololi Strip</li>
+                        <li class="mb-2"><b>Email:</b> <a class="text-white" href="mailto:jobartehmuhammed39@gmail.com" style="word-break:break-all;">jobartehmuhammed39@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h2 class="h4">Follow Us</h2>
+                    <!-- Replace these dots with your social media links later -->
+                    <p class="fs-4 mb-0">. &nbsp; . &nbsp; . </p>
+                </div>
+            </div>
+            <hr style="border:0; border-top:1px solid #6b9087; margin:25px 0 15px 0;">
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
